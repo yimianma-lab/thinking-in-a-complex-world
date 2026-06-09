@@ -103,6 +103,22 @@ img {
   color: var(--green);
 }
 
+.site-nav .lang-switch {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--green);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-nav .lang-switch:hover,
+.site-nav .lang-switch:focus-visible {
+  background: rgba(47, 93, 80, 0.08);
+  border-color: var(--green);
+}
+
 /* --------------------------------------------------------------------------
    Sections — shared layout
    -------------------------------------------------------------------------- */
@@ -263,6 +279,16 @@ h4 {
   white-space: nowrap;
 }
 
+.page-zh .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.06em;
+}
+
+.page-zh .site-nav .logo {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 .hero__label-zh {
   display: block;
   margin-top: 5px;
@@ -271,6 +297,13 @@ h4 {
   letter-spacing: 0.02em;
   color: #666;
   white-space: nowrap;
+}
+
+.hero__label-zh--solo {
+  margin-top: 0;
+  font-size: clamp(11px, 1.35vw, 13px);
+  font-weight: 700;
+  color: var(--text);
 }
 
 @media (prefers-reduced-motion: reduce) {
